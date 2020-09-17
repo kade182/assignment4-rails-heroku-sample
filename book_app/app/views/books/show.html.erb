@@ -1,0 +1,29 @@
+<% @page_title = "Show Book Details" %>
+
+<%= link_to('Home',{:action => 'index'}) %><br />
+
+<div class="book show">
+  <h2>View Book Details</h2>
+  <table summary="Book Detail View">
+    <tr>
+      <th>Title</th>
+      <td><%= @book.title %></td>
+    </tr>
+    <tr>
+      <th>Author</th>
+      <td><%= @book.author %></td>
+    </tr>
+    <tr>
+      <th>Genre</th>
+      <td><%= @book.genre %></td>
+    </tr>
+    <tr>
+      <th>Published Date</th>
+      <td><%= @book.published_date %></td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td><%= @book.price %></td>
+    </tr>
+  </table>
+</div>

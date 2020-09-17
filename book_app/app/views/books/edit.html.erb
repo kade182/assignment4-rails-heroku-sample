@@ -1,0 +1,36 @@
+<%= link_to('Home',{:action => 'index'}) %><br />
+<div class="edit_book">
+  <h2>Update Book</h2>
+
+  <%= form_for(@book) do |f| %>
+    <table summary="Book form fields">
+      <tr>
+        <th>Title</th>
+        <td><%= f.text_field(:title) %></td>
+      </tr>
+      <tr>
+        <th>Author</th>
+        <td>
+        <%= f.text_field(:author) %></td>
+      </tr>
+      <tr>
+        <th>Genre</th>
+        <td><%= f.text_field(:genre) %></td>
+      </tr>
+      <tr>
+      <th>Price</th>
+      <td><%= f.text_field(:price) %></td>
+    </tr>  
+    <tr>
+    <th>Publishing Year</th>
+    <td><%= f.text_field(:published_date) %></td>
+  </tr>
+    </table>
+
+    <div class="form-buttons">
+      <%= f.submit("Update Book") %>
+    </div>
+
+  <% end %>
+</div>
+
